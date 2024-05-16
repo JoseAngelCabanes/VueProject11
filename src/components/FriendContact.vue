@@ -2,7 +2,7 @@
   <li>
     <h2>{{ friend.name }}</h2>
     <button @click="toogleDetails">Show Details</button>
-    <ul>
+    <ul v-if="detailsAreVisible">
       <li><strong>Phone:</strong> {{ friend.phone }}</li>
       <li><strong>Email:</strong> {{ friend.email }}</li>
     </ul>
