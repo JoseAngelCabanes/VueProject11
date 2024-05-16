@@ -45,4 +45,21 @@ body {
   margin: 0;
 }
 
+header {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+  margin: 3rem auto;
+  border-radius: 10px;
+  padding: 1rem;
+  background-color: #58004d;
+  color: white;
+  text-align: center;
+  width: 90%;
+  max-width: 40rem;
+}
+
+#app ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
 </style>
