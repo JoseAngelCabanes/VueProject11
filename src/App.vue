@@ -72,4 +72,11 @@ header {
   width: 90%;
   max-width: 40rem;
 }
+
+#app h2 {
+  font-size: 2rem;
+  border-bottom: 4px solid #ccc;
+  color: #58004d;
+  margin: 0 0 1rem 0;
+}
 </style>
