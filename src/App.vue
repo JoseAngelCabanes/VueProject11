@@ -21,13 +21,12 @@ npm init vue uses an official package to help you initialize Vue projects. You g
         name="Manuel Lorenz"
         phone-number="01234 56789"
         email-adress="manuel@localhost.com"
-        is-favorite="1"
+        :is-favorite="true"
       ></friend-contact>
       <friend-contact
         name="Julie Jones"
         phone-number="0987 654321"
         email-adress="julie@localhost.com"
-        is-favorite="0"
       ></friend-contact>
     </ul>
   </section>
