@@ -23,9 +23,9 @@ npm init vue uses an official package to help you initialize Vue projects. You g
         email-adress="manuel@localhost.com"
       ></friend-contact>
       <friend-contact
-        name="Manuel Lorenz"
-        phone-number="01234 56789"
-        email-adress="manuel@localhost.com"
+        name="Julie Jones"
+        phone-number="0987 654321"
+        email-adress="julie@localhost.com"
       ></friend-contact>
     </ul>
   </section>
