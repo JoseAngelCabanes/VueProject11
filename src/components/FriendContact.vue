@@ -30,7 +30,11 @@ export default {
     },
     isFavorite: {
       type: String,
-      required: true,
+      required: false,
+      default: '0',
+      validator: function (value) {
+        return value === '1' || value === '0';
+      }
     },
   },
   data() {
