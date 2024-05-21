@@ -17,8 +17,16 @@ npm init vue uses an official package to help you initialize Vue projects. You g
   <section>
     <header><h1>My friends</h1></header>
     <ul>
-      <friend-contact></friend-contact>
-      <friend-contact></friend-contact>
+      <friend-contact
+        name="Manuel Lorenz"
+        phone-number="01234 56789"
+        email-adress="manuel@localhost.com"
+      ></friend-contact>
+      <friend-contact
+        name="Manuel Lorenz"
+        phone-number="01234 56789"
+        email-adress="manuel@localhost.com"
+      ></friend-contact>
     </ul>
   </section>
 </template>
