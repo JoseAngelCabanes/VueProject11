@@ -20,10 +20,12 @@ npm init vue uses an official package to help you initialize Vue projects. You g
       <friend-contact
         v-for="friend in friends"
         :key="friend.id"
+        :id="friend.id"
         :name="friend.name"
         :phone-number="friend.phone"
         :email-adress="friend.email"
         :is-favorite="friend.isFavorite"
+        @toggle-favorite="toggleFavoriteStatus"
       ></friend-contact>
     </ul>
   </section>
@@ -39,17 +41,25 @@ export default {
           name: "Manuel Lorenz",
           phone: "0123 45678 91",
           email: "manue@localhost.com",
-          isFavorite: true
+          isFavorite: true,
         },
         {
           id: "julie",
           name: "Julie Jones",
           phone: "0987 65432 10",
           email: "julie@localhost.com",
-          isFavorite: false
+          isFavorite: false,
         },
       ],
     };
+  },
+  methods: {
+    toggleFavoriteStatus(friendId) {
+      const identifiedFriend = this.friends.find(
+        (friend) => friend.id === friendId
+      );
+      identifiedFriend.isFavorite = !identifiedFriend.isFavorite;
+    },
   },
 };
 </script>
