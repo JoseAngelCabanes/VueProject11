@@ -50,7 +50,6 @@ export default {
         phone: "0123 45678 91",
         email: "manue@localhost.com",
       },
-      friendIsFavorite: this.isFavorite,
     };
   },
   methods: {
