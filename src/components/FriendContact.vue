@@ -41,6 +41,7 @@ export default {
       // }
     },
   },
+  emits: ['toggle-favorite'],
   data() {
     return {
       detailsAreVisible: false,
