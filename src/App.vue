@@ -23,7 +23,7 @@ npm init vue uses an official package to help you initialize Vue projects. You g
         :name="friend.name"
         :phone-number="friend.phone"
         :email-adress="friend.email"
-        :is-favorite="true"
+        :is-favorite="friend.isFavorite"
       ></friend-contact>
     </ul>
   </section>
@@ -39,12 +39,14 @@ export default {
           name: "Manuel Lorenz",
           phone: "0123 45678 91",
           email: "manue@localhost.com",
+          isFavorite: true
         },
         {
           id: "julie",
           name: "Julie Jones",
           phone: "0987 65432 10",
           email: "julie@localhost.com",
+          isFavorite: false
         },
       ],
     };
