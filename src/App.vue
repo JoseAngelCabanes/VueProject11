@@ -16,6 +16,9 @@ npm init vue uses an official package to help you initialize Vue projects. You g
 <template>
   <section>
     <header><h1>My friends</h1></header>
+    <form>
+      
+    </form>
     <ul>
       <friend-contact
         v-for="friend in friends"
